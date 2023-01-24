@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/0c27150421.js" crossorigin="anonymous"></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="weather">
+        <div class="weatherBoxLeft">
+            <img src="./images/1.png" alt="soleil" class="weatherBoxSun">
+            <div class="weatherBoxLeftBot">
+                <p class="weatherBoxTitle"> <span class="color">Trouver</span> la météo de votre ville</p>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>  
+        </div>
+        <div class="weatherBoxRight">
+            <div class="weatherBoxSearch">
+                <p class="searchTitle">Rechercher la ville</p>
+                <form class="form" >
+                    <div >
+                        <input id="inputCity" type="text" placeholder="Rechercher">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="titre">
+                <h1 id="city">Paris</h1>
+                <img alt="soleil" class="weatherNowImg">
+            </div> 
+            <span id="desc"></span>
+            <div class="weatherNow">
+                    <div class="weatherDetails">
+                        <div class="details">
+                            <span class="weatherDetailsTitle">TEMPÉRATURE</span>
+                            <span id="temp"class="weatherDetailsRes"></span>
+                        </div>
+                        <div class="details">
+                            <span class="weatherDetailsTitle">HUMIDITÉ</span>
+                            <span id="humidity"class="weatherDetailsRes"></span>
+                        </div>
+                        
+                    </div>
+                    <div class="separation"></div>
+                    <div class="weatherDetails">
+                        <div class="details">
+                            <span class="weatherDetailsTitle">RESSENTI</span>
+                            <span id="feels"class="weatherDetailsRes"></span>
+                        </div>
+                        <div class="details">
+                            <span class="weatherDetailsTitle">VENT</span>
+                            <span id="wind"class="weatherDetailsRes"></span>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
