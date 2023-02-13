@@ -182,3 +182,31 @@ a{
     text-decoration: none;
     color: rgba(0, 0, 0, 0.8);
 }
+
+
+
+
+@media screen and (max-width:768px){
+    .weather{
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        position: static;
+        transform: none;
+        height: auto;
+        justify-content: center;
+    }
+    .weatherBoxLeft, .weatherBoxRight{
+        width: 100%;
+        height: 98vh;
+    }
+    .weatherBoxLeft{
+        justify-content: space-between;
+    }
+    .fa-arrow-right{
+        rotate: 90deg;
+    }
+    .credit{
+        top: 89px;
+    }
+}
